@@ -1,0 +1,27 @@
+Codes, screenshots and comments. The project is quite simple. We program the
+Arduino so that it sends data to the server via the ESP module using POST requests.
+Below is an example of the code we use for the temperature sensor.
+First we add the necessary libraries and declare the appropriate variables
+
+Next, in the setup() function, we configure our sensor to connect to a Wi-Fi network
+
+Now, inside the loop() function, the data from the sensors is read,
+converted and sent to the server (SetTemp.php)
+
+The sent data from the Arduino is received by the server in the SetTemp.php file. 
+This script is hidden and inaccessible to the user
+
+Briefly, the script splits the received data into temperature and humidity,
+connects to the database and saves it. It then sends the feedback back to the Arduino
+sensor, where it is then displayed in the application
+
+The data stored in the database is immediately displayed in the user interface.
+This is accomplished by an additional script, that queries data from
+the database and displays it to the user
+
+Other sensors and sensors function in a similar way, sending and storing data.
+The smart light bulb works in a slightly different way: the user presses a button and a PHP script changes the data in the database
+
+The Arduino connected to the relay constantly checks the database. If the
+database is set to 1, the relay turns the lamp on; if it is set to 0, it turns it off. You can
+see the code responsible for sending data to the relay
