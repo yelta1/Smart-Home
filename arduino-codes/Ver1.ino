@@ -10,8 +10,8 @@
 #define LED_D8 15 //--> Defines an LED Pin. D8 = GPIO15
 
 //----------------------------------------SSID and Password of your WiFi router.
-const char* ssid = "TP-LINK_A04C0F"; //--> Your wifi name or SSID.
-const char* password = "2003Aspan"; //--> Your wifi password.
+const char* ssid = ""; //--> Your wifi name or SSID.
+const char* password = ""; //--> Your wifi password.
 //----------------------------------------
 
 //----------------------------------------Web Server address / IPv4
@@ -19,7 +19,7 @@ const char* password = "2003Aspan"; //--> Your wifi password.
 // String host_or_IPv4 = "http://Your_Host_or_IP";
 // Example :
 // String host_or_IPv4 = "http://192.168.1.103/";
-String host_or_IPv4 = "http://192.168.1.103/";
+String host_or_IPv4 = "your_host_ip";
 
 String Destination = "";
 String URL_Server = "";
