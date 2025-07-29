@@ -7,8 +7,8 @@
 #define DHTPIN D2      // Пин, к которому подключен DHT11
 #define DHTTYPE DHT11 
 //----------------------------------------SSID and Password of your WiFi router.
-const char* ssid = "SmartHome"; //--> Your wifi name or SSID.
-const char* password = "Iitu2024"; //--> Your wifi password.
+const char* ssid = ""; //--> Your wifi name or SSID.
+const char* password = ""; //--> Your wifi password.
 //----------------------------------------
 
 //----------------------------------------Web Server address / IPv4
@@ -16,7 +16,7 @@ const char* password = "Iitu2024"; //--> Your wifi password.
 // String host_or_IPv4 = "http://Your_Host_or_IP";
 // Example :
 // String host_or_IPv4 = "http://192.168.1.103/";
-String host_or_IPv4 = "http://192.168.1.101/";
+String host_or_IPv4 = "your_host_ip";
 
 String Destination = "";
 String URL_Server = "";
